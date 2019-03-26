@@ -1,0 +1,21 @@
+.page-contact {
+
+  &__content {
+    // TODO: Final solution for this pacth
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 4;
+  }
+
+  &__form {
+    width: 350px;
+  }
+}

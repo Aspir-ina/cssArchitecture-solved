@@ -1,0 +1,84 @@
+.page-home {
+  color: white;
+
+  &__content {
+    width: 100%;
+    // TODO: Final solution for this pacth
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 4;
+  }
+
+  &__title {
+    color: #FFF;
+    font-size: rem(32px);
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: #FFF;
+    border-top: 3px solid #CCC;
+    padding-top: 8px;
+  }
+
+  &__location-info {
+    display: flex;
+  }
+
+  &__footer {
+    display: flex;
+    width: 100%;
+
+    &--empty {
+      flex-grow: 1;
+    }
+  }
+}
+
+.time__wrapper {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.geolocation__wrapper {
+  flex-grow: 1;
+  text-align:center;
+}
+
+.time {
+  &__hour {
+
+  }
+
+  &__text {
+    font-size: rem(12px);
+  }
+
+  &__value {
+    font-size: rem(16px);
+    font-weight: bold;
+  }
+}
+
+.geolocation {
+  &__city {
+
+  }
+  &__text {
+    font-size: rem(12px);
+  }
+
+  &__value {
+    font-size: rem(16px);
+    font-weight: bold;
+  }
+}

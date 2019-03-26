@@ -1,0 +1,43 @@
+
+@import 'styles/main';
+
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  @include rem-baseline;
+  font-size: 32px;
+}
+
+.full-layout-display {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.background__layout {
+  -webkit-background-image: url('./assets/layout/background.jpg');
+  -moz-background-image: url('./assets/layout/background.jpg');
+  -o-background-image: url('./assets/layout/background.jpg');
+  background-image: url('./assets/layout/background.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo-image {
+  text-align: center;
+  &__image {
+    max-width: 60px;
+    max-height: 100px;
+  }
+}

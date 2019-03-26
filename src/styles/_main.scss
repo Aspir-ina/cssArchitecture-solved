@@ -1,0 +1,13 @@
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+
+@import 'layout/spacing';
+
+@import "components/menu";
+@import "components/home";
+@import "components/testimonials";
+@import "components/contact";
+@import "components/form";

@@ -1,0 +1,26 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+
+  &__item {
+    color: #CCC;
+    cursor: pointer;
+    font-weight: bold;
+    &--active {
+      color: #FFF;
+      cursor: pointer;
+      outline: none;
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+}

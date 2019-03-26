@@ -1,0 +1,56 @@
+.page-testimonials {
+  &__content {
+    // TODO: Final solution for this pacth
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 4;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__image {
+    width: 120px;
+
+    &-container {
+      background-color: #FFF;
+      @include border-radius(15px);
+      width: 120px;
+      height: 107px;
+    }
+  }
+
+  &__name {
+    color: #FFF;
+    font-weight: bold;
+  }
+
+  &__description {
+    color: #FFF;
+    font-style: italic;
+    text-align: center;
+  }
+}
